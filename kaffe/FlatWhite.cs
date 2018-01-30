@@ -6,25 +6,30 @@ using System.Threading.Tasks;
 
 namespace kaffe
 {
-    public class Cortado : Kaffe , Imælk
+   public class FlatWhite : Kaffe , Imælk
     {
-        /// <summary>
-        /// hvor meget mælk skal bruge i cortado
-        /// </summary>
-        /// <returns></returns>
+        public FlatWhite()
+        {
+
+        } 
+
+        public override string Styrke()
+        {
+            return "Svag";
+        } 
+
         public int MlMælk()
         {
             return 25;
         }
 
         /// <summary>
-        /// Prisen på Cortado
+        /// giver prisen tilbage på en kop flatwhtie
         /// </summary>
         /// <returns></returns>
         public override int Pris()
         {
-            return 25;
+            return 75;
         }
-        
     }
 }
